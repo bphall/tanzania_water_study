@@ -18,10 +18,14 @@ The data was obtained from Taarifa (Rwandan News) and the Tanzanian Ministry of 
 - water quality
 - elevation
 - region
+- subvillage 
+- nearby basin
+- funding
+- longitude, latitude
 
 ## EDA <a name='eda'></a>
 ### ![source](water_source.png)
-The above graphic shows communal standpipes (red) vs. other standpipes types around Tanzania. 
+The above graphic shows hand pumps, cattle troughs, and other pump varieties (red) vs. other communal standpipes types around Tanzania. 
 ### ![target](functioning.png)
 The above graphic shows the target variable (non-functional) in red around Tanzania. 
 
@@ -30,10 +34,10 @@ Many columns were dropped if they had a somewhat duplicate column on which they 
 
 ### Data Exploration
 Medium initial correlations were found between the following features and target variable (status_group): 
--Pump type: 0.22
--Quality: .16
--Elevation: -.11
--Region: .11
+- Pump type: 0.22
+- Quality: .16
+- Elevation: -.11
+- Region: .11
 
 ## Model & Results <a name='model'></a>
 Models used were Baseline, Random Rorest, KNN, and Logistic. Interestingly, KNN performed the best, with a final gridsearch KNN (n = 9) model producing an f1 score of .74 and an accuracy score of .81. Perhaps KNN was the best model due to the clustering of important independent features around each other (such as similar elevations or villages in isolated mountain regions, with small populations and fewer resources).
@@ -41,8 +45,11 @@ Models used were Baseline, Random Rorest, KNN, and Logistic. Interestingly, KNN 
 ## Feature Analysis
 An xgboost feature importance plotter revealed the most important features in the dataset, since KNN has no such method (being a lazy learner). The most important features were Elevation, Population, Construction year, and Region, which are all indicators of clustered causal features related to geography, and likely resource availability. 
 ### ![target](functioning.png)
+The above graphics depicts non-functional pumps in red (the target). 
 ### ![population](pop_target.png)
-### ![elevation](tanz_elevation.jpg))
+The above graphic depicts smaller populations in blue (<180).
+### ![elevation](tanz_elevation.jpg)
+An elevation map of Tanzania. 
 
 ## Conclusions <a name='concl'></a>
 Elevation, Population, Construction year, and Region were the most important features for prediction pump functionality.
