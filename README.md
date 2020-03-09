@@ -27,16 +27,16 @@ Many columns were dropped if they had a somewhat duplicate column on which they 
 
 ### Data Exploration
 Medium initial correlations were found between the following features and target variable (status_group): 
-Pump type: 0.22
-Quality: .16
-Elevation: -.11
-Region: .11
+-Pump type: 0.22
+-Quality: .16
+-Elevation: -.11
+-Region: .11
 
 ## Model & Results <a name='model'></a>
-used recursive feature engineering with cross validation, linear regression, Lasso L1, Ridge L2, and GridSearchCV to produce our best model : Ridge L2 (alpha: .01) with a root mean squared error of 3.69, meaning it is, on average, 3.69 days off when predicting the true values. 
+Models used were Baseline, Random Rorest, KNN, and Logistic. Interestingly, KNN performed the best, with a final gridsearch KNN (n = 9) model producing an f1 score of .74 and an accuracy score of .81. Perhaps KNN was the best model due to the clustering of important independent features around each other (such as similar elevations or villages in isolated mountain regions, with small populations and fewer resources).
 
-## Regression Analysis
-Recursive feature elimination revealed the most important features in our model, with Income (Composition of Resources) as the main driving factor for life expectancy, followed by Schooling and HIV/AIDS. Our residuals from the model are normally distributed and symmetric, indicating that the assumptions of linearity and homoscedasticity are met. 
+## Feature Analysis
+An xgboost feature importance plotter revealed the most important features in the dataset, since KNN has no such method (being a lazy learner). The most important features were Elevation, Population, Construction year, and Region, which are all indicators of clustered causal features 
 ### ![residscatter](residualscatter.png)
 ### ![residdist](residualdist.png)
 ### ![qqplot](residqq.png)
