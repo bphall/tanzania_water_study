@@ -10,7 +10,7 @@ Conducted by Brayton Hall.
 - [Conclusions](#concl)
 
 ## Project Goals
-My aim was to predict the functionality of water pumps throughout villages in Tanzania, and perhaps forumalate some actionable response from the most important features. 
+My aim was to predict the functionality of water pumps throughout villages in Tanzania, and perhaps formulate some actionable response from the most important features. 
 
 ## Data Collection <a name='data'></a>
 The data was obtained from Taarifa (Rwandan News) and the Tanzanian Ministry of Water via the open prediction competition on [drivendata.org](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/). Important features among 40 initial independent variables include:
