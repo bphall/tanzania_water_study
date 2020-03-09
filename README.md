@@ -34,10 +34,10 @@ Many columns were dropped if they had a somewhat duplicate column on which they 
 
 ### Data Exploration
 Medium initial correlations were found between the following features and target variable (status_group): 
--Pump type: 0.22
--Quality: .16
--Elevation: -.11
--Region: .11
+- Pump type: 0.22
+- Quality: .16
+- Elevation: -.11
+- Region: .11
 
 ## Model & Results <a name='model'></a>
 Models used were Baseline, Random Rorest, KNN, and Logistic. Interestingly, KNN performed the best, with a final gridsearch KNN (n = 9) model producing an f1 score of .74 and an accuracy score of .81. Perhaps KNN was the best model due to the clustering of important independent features around each other (such as similar elevations or villages in isolated mountain regions, with small populations and fewer resources).
