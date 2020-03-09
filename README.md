@@ -20,7 +20,10 @@ The data was obtained from Taarifa (Rwandan News) and the Tanzanian Ministry of 
 - region
 
 ## EDA <a name='eda'></a>
-
+### ![source](water_source.png)
+The above graphic shows communal standpipes (red) vs. other standpipes types around Tanzania. 
+### ![target](functioning.png)
+The above graphic shows the target variable (non-functional) in red around Tanzania. 
 
 ### Data Cleaning
 Many columns were dropped if they had a somewhat duplicate column on which they merely grouped information into broader classes, as well as columns missing many values, resulting in a total of 21 features and 59,400 samples.
