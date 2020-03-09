@@ -21,7 +21,7 @@ The data was obtained from Taarifa (Rwandan News) and the Tanzanian Ministry of 
 
 ## EDA <a name='eda'></a>
 ### ![source](water_source.png)
-The above graphic shows communal standpipes (red) vs. other standpipes types around Tanzania. 
+The above graphic shows hand pumps, cattle troughs, and other pump varieties (red) vs. other communal standpipes types around Tanzania. 
 ### ![target](functioning.png)
 The above graphic shows the target variable (non-functional) in red around Tanzania. 
 
