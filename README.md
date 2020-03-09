@@ -45,8 +45,11 @@ Models used were Baseline, Random Rorest, KNN, and Logistic. Interestingly, KNN 
 ## Feature Analysis
 An xgboost feature importance plotter revealed the most important features in the dataset, since KNN has no such method (being a lazy learner). The most important features were Elevation, Population, Construction year, and Region, which are all indicators of clustered causal features related to geography, and likely resource availability. 
 ### ![target](functioning.png)
+The above graphics depicts non-functional pumps in red (the target). 
 ### ![population](pop_target.png)
-### ![elevation](tanz_elevation.jpg))
+The above graphic depicts smaller populations in blue (<180).
+### ![elevation](tanz_elevation.jpg)
+An elevation map of Tanzania. 
 
 ## Conclusions <a name='concl'></a>
 Elevation, Population, Construction year, and Region were the most important features for prediction pump functionality.
