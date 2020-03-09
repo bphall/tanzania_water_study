@@ -18,6 +18,10 @@ The data was obtained from Taarifa (Rwandan News) and the Tanzanian Ministry of 
 - water quality
 - elevation
 - region
+- subvillage 
+- nearby basin
+- funding
+- longitude, latitude
 
 ## EDA <a name='eda'></a>
 ### ![source](water_source.png)
