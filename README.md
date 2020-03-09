@@ -42,9 +42,9 @@ An xgboost feature importance plotter revealed the most important features in th
 ### ![elevation](tanz_elevation.jpg))
 
 ## Conclusions <a name='concl'></a>
-Elevation, Population, Construction year, and Region were the most important features for prediction pump functionality.//
-These aren't easily actionable findings, since they indicate a broader systematic problem involving overuse by isolated mountain villages without resources to repair or build new pumps.//
-Solutions would most likely require providing isolated communities with material assistance.//
+Elevation, Population, Construction year, and Region were the most important features for prediction pump functionality.
+These aren't easily actionable findings, since they indicate a broader systematic problem involving overuse by isolated mountain villages without resources to repair or build new pumps.
+Solutions would most likely require providing isolated communities with material assistance.
  
 
 
